@@ -1,0 +1,31 @@
+Assignment 6
+
+12.Change the size of Branch_state column.
+ANS: alter table bank_branch modify(Branch_state char(25));
+
+13.Change the branch_name=‟Union‟ where id=B003.
+ANS: update bank_branch set branch_name='Union' where BRANCH_ID='B003';
+
+14.Change the state=‟Delhi‟ of BOI branch.
+ANS: update bank_branch set branch_state='Delhi' where BRANCH_ID='B001';
+
+15.Change the branch_open_date=04-nov-2015 of Union branch.
+ANS: update bank_branch set branch_open_date='04-nov-15' where BRANCh_NAME='Union';
+
+16.Add column Pincode in branch.
+ANS: alter table bank_branch add(pincode number(10));
+
+17. Insert pincode=360006 of Dena Bank.
+ANS: update bank_branch set pincode=360006  where branch_name='DenaBank';
+
+18.Delete information of Branch having branch_open_date=07-may-2011.
+ANS: delete from bank_branch where branch_open_date='07-may-11';
+
+19.Rename table Bank_Branch to Branch_master.
+ANS: Rename Bank_Branch to Branch_master;
+
+20.Display structure of Branch_master.
+ANS: select * from branch_master;
+
+21.Create Banch_info from Branch_master.
+ANS: alter table branch_master add (branch_info char(25));
